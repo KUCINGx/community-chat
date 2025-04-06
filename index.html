@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Community Chat</h1>
+        </header>
+        <main>
+            <div class="chat-window" id="chat-window">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="username" placeholder="Your Name">
+                <input type="text" id="chat-message" placeholder="Type your message">
+                <button id="send-button">Send</button>
+            </div>
+        </main>
+        <section class="marketplace">
+            <div class="buyers-section">
+                <h2>Buyers</h2>
+                <div class="buyer-posts" id="buyer-posts">
+                    <!-- Buyer posts will be appended here -->
+                </div>
+                <input type="text" id="buyer-name" placeholder="Your Name">
+                <input type="text" id="buyer-message" placeholder="What are you looking for?">
+                <button id="buyer-send">Post</button>
+            </div>
+            <div class="sellers-section">
+                <h2>Sellers</h2>
+                <div class="seller-posts" id="seller-posts">
+                    <!-- Seller posts will be appended here -->
+                </div>
+                <input type="text" id="seller-name" placeholder="Your Name">
+                <input type="text" id="seller-message" placeholder="What are you selling?">
+                <button id="seller-send">Post</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
